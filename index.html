@@ -1450,6 +1450,67 @@
     .action-btn-secondary { background: #24201a; color: #fef3c7; border: 1.5px solid var(--gold-border); border-radius: 999px; padding: 9px 15px; font-family: inherit; font-size: calc(12.5px * var(--text-scale, 1)); font-weight: 700; cursor: pointer; }
     .action-btn-danger { background: transparent; color: #a8a29e; border: 1px solid #44403c; border-radius: 999px; padding: 9px 14px; font-family: inherit; font-size: calc(12px * var(--text-scale, 1)); font-weight: 600; cursor: pointer; margin-left: auto; }
 
+
+    .shortlist-restore-banner {
+      background: #172a1e;
+      border: 1.5px solid #4ade80;
+      border-radius: 8px;
+      padding: 9px 12px;
+      margin-bottom: 12px;
+      font-size: calc(12.5px * var(--text-scale, 1));
+      color: #dcfce7;
+      font-weight: 700;
+    }
+    .shortlist-restore-tip {
+      margin-top: 10px;
+      background: #211d16;
+      border: 1px dashed var(--gold-border);
+      border-radius: 8px;
+      padding: 8px 11px;
+      font-size: calc(11.5px * var(--text-scale, 1));
+      color: #d6d3d1;
+      line-height: 1.4;
+    }
+    .shortlist-restore-tip strong { color: #fde68a; }
+    .shortlist-restore-box {
+      margin-top: 14px;
+      padding: 12px;
+      background: #211d16;
+      border: 1px solid var(--gold-border);
+      border-radius: 8px;
+      text-align: left;
+    }
+    .shortlist-restore-box-title {
+      font-weight: 700;
+      color: #fde68a;
+      font-size: calc(12.5px * var(--text-scale, 1));
+      margin-bottom: 6px;
+    }
+    .restore-paste-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: stretch;
+    }
+    .restore-paste-input {
+      flex: 1;
+      min-width: 180px;
+      min-height: 40px;
+      padding: 7px 10px;
+      border: 1px solid var(--gold-border);
+      border-radius: 8px;
+      background: #11100e;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: calc(12.5px * var(--text-scale, 1));
+    }
+    .restore-paste-error {
+      margin-top: 6px;
+      color: #fca5a5;
+      font-size: calc(11.5px * var(--text-scale, 1));
+      font-weight: 600;
+    }
+
     /* Lightbox */
     .lightbox-backdrop { position: fixed; inset: 0; z-index: 1000; background: rgba(0, 0, 0, 0.92); display: none; align-items: center; justify-content: center; padding: 20px; cursor: zoom-out; }
     .lightbox-backdrop.open { display: flex; }
@@ -2136,10 +2197,10 @@
       </div>
     </section>
 
-    <section id="sec-experiences" class="category-section" data-nav-title="✨ Experiences, Dining & Gatherings" data-nav-lots="Lots #7–#13, #36">
+    <section id="sec-experiences" class="category-section" data-nav-title="✨ Experiences, Dining & Gatherings" data-nav-lots="Lots #7–#13, #36, #40, #42">
       <div class="category-header">
         <h2 class="category-title">✨ Experiences, Dining &amp; Gatherings</h2>
-        <span class="category-count">8 Golden Lots</span>
+        <span class="category-count">10 Golden Lots</span>
       </div>
       <div class="items-grid">
         <article class="item-card">
@@ -2325,6 +2386,50 @@
             
             <p class="item-desc">
               Enjoy a night out at the theatre with 2 seats to <em>13 Going on 30</em> at Mirvish!
+            </p>
+            
+          </div>
+          <div class="item-footer">
+            <span class="write-in">Paddle / Bid #: <span class="write-line"></span></span>
+            <span class="write-in">My Bid: $<span class="write-line"></span></span>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div>
+            <div class="item-top">
+              <div class="item-title-group">
+                <span class="item-number">#40</span>
+                <h3 class="item-title">Sandwiches &amp; Super Smash Bros. Night with Alex Straus</h3>
+              </div>
+              <span class="bid-badge">Start: <span class="price-blur" aria-label="Price hidden">$25</span></span>
+            </div>
+            <div class="item-donor"><span>Hosted by</span> Alex Straus</div>
+            
+            <p class="item-desc">
+              Meat sandwiches and a fun game night playing Super Smash Bros. at Alex Straus&rsquo;s house! (Up to 4 players.)
+            </p>
+            
+          </div>
+          <div class="item-footer">
+            <span class="write-in">Paddle / Bid #: <span class="write-line"></span></span>
+            <span class="write-in">My Bid: $<span class="write-line"></span></span>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div>
+            <div class="item-top">
+              <div class="item-title-group">
+                <span class="item-number">#42</span>
+                <h3 class="item-title">Floral Bouquet Ladies&rsquo; Night (Up to 5 Guests)</h3>
+              </div>
+              <span class="bid-badge">Start: <span class="price-blur" aria-label="Price hidden">$50</span></span>
+            </div>
+            <div class="item-donor"><span>Hosted by</span> Rachael</div>
+            
+            <p class="item-desc">
+              Rachael will come to you and make 5 beautiful floral bouquets with you (up to 5 people max)!
             </p>
             
           </div>
@@ -2854,10 +2959,10 @@
       </div>
     </section>
 
-    <section id="sec-kids-wellness" class="category-section" data-nav-title="💆 Kids, Wellness & Services" data-nav-lots="Lots #31–#34, #38–#39">
+    <section id="sec-kids-wellness" class="category-section" data-nav-title="💆 Kids, Wellness & Services" data-nav-lots="Lots #31–#34, #38–#39, #41">
       <div class="category-header">
         <h2 class="category-title">💆 Kids, Wellness &amp; Services</h2>
-        <span class="category-count">6 Golden Lots</span>
+        <span class="category-count">7 Golden Lots</span>
       </div>
       <div class="items-grid">
         <article class="item-card">
@@ -2963,7 +3068,7 @@
                 <span class="item-number">#38</span>
                 <h3 class="item-title">GLO At-Home Professional Teeth Whitening</h3>
               </div>
-              <span class="bid-badge">Start: <span class="price-blur" aria-label="Price hidden">$100</span></span>
+              <span class="bid-badge">Start: <span class="price-blur" aria-label="Price hidden">$25</span></span>
             </div>
             
             
@@ -2991,6 +3096,28 @@
             
             <p class="item-desc">
               A personalized one-hour consultation designed to help parents better understand their child&rsquo;s behaviour and navigate everyday challenges. Together, we&rsquo;ll explore specific concerns, identify possible reasons behind behaviours, and discuss practical strategies to support your child&rsquo;s needs.<br /><br />Parents will leave with greater clarity, guidance, and actionable strategies they can begin using at home.
+            </p>
+            
+          </div>
+          <div class="item-footer">
+            <span class="write-in">Paddle / Bid #: <span class="write-line"></span></span>
+            <span class="write-in">My Bid: $<span class="write-line"></span></span>
+          </div>
+        </article>
+
+        <article class="item-card">
+          <div>
+            <div class="item-top">
+              <div class="item-title-group">
+                <span class="item-number">#41</span>
+                <h3 class="item-title">Sunday Slimeday (Up to 5 Kids)</h3>
+              </div>
+              <span class="bid-badge">Start: <span class="price-blur" aria-label="Price hidden">$25</span></span>
+            </div>
+            <div class="item-donor"><span>Hosted by</span> Alex</div>
+            
+            <p class="item-desc">
+              Two hours of hands-on Sunday fun! Alex will make slime with up to 5 kids for 2 hours on a Sunday.
             </p>
             
           </div>
@@ -3211,13 +3338,13 @@
       <div class="modal-body">
         <p style="margin-bottom: 12px;">Print settings tip: select <strong>US Letter</strong>, <strong>Landscape</strong>, and <strong>Two-Sided (Flip on Short Edge)</strong> so the cover and inside panels align cleanly when folded into thirds.</p>
         <div class="trifold-option-card">
-          <div class="trifold-option-title">1. Compact 1-Sheet Trifold (All 39 Lots — Titles &amp; Bids)</div>
-          <div class="trifold-option-desc">Fits cleanly on <strong>1 double-sided sheet (6 panels)</strong>: Front Cover, QR Back Cover, Featured VIP Package (#35), plus all 38 category lots grouped by section. Ideal as a handy pocket reference!</div>
+          <div class="trifold-option-title">1. Compact 1-Sheet Trifold (All 42 Lots — Titles &amp; Bids)</div>
+          <div class="trifold-option-desc">Fits cleanly on <strong>1 double-sided sheet (6 panels)</strong>: Front Cover, QR Back Cover, Featured VIP Package (#35), plus all 41 category lots grouped by section. Ideal as a handy pocket reference!</div>
           <button type="button" class="action-btn-primary" onclick="printTrifoldBrochure('compact')">🖨️ Print 1-Sheet Trifold</button>
         </div>
         <div class="trifold-option-card">
           <div class="trifold-option-title">2. Detailed Multi-Sheet Trifold (Includes Full Descriptions)</div>
-          <div class="trifold-option-desc">Flows Cover, QR, Featured VIP Package, and all 38 lots <strong>with full descriptions</strong> across crisp 3-column landscape sheets (2+ double-sided sheets).</div>
+          <div class="trifold-option-desc">Flows Cover, QR, Featured VIP Package, and all 41 lots <strong>with full descriptions</strong> across crisp 3-column landscape sheets (2+ double-sided sheets).</div>
           <button type="button" class="action-btn-secondary" onclick="printTrifoldBrochure('detailed')">🖨️ Print Detailed Trifold</button>
         </div>
       </div>
@@ -3343,6 +3470,7 @@
     }
     let shortlistState = {};
     let catalogItems = [];
+    let shortlistRestoredNotice = false;
 
     const MIGRATED_META_KEY = "gggelt_2026_shortlist_migrated_keys";
 
@@ -3473,6 +3601,7 @@
       });
       if (refreshed) saveShortlist();
       syncShortlistUI();
+      checkUrlShortlistRestore();
     }
 
     function toggleSaveItem(item) {
@@ -3506,6 +3635,7 @@
     }
 
     function closeShortlistModal() {
+      shortlistRestoredNotice = false;
       document.getElementById("shortlistModal").classList.remove("open");
       document.body.style.overflow = "";
     }
@@ -3515,11 +3645,13 @@
     }
 
     function removeFromShortlist(num) {
+      shortlistRestoredNotice = false;
       delete shortlistState[num];
       saveShortlist(); syncShortlistUI(); renderShortlistModal();
     }
 
     function clearShortlist() {
+      shortlistRestoredNotice = false;
       shortlistState = {};
       saveShortlist(); syncShortlistUI(); renderShortlistModal();
     }
@@ -3528,11 +3660,149 @@
       return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     }
 
+    function getCatalogBaseUrl() {
+      try {
+        if (typeof window !== "undefined" && window.location && (window.location.protocol === "http:" || window.location.protocol === "https:")) {
+          return window.location.origin + window.location.pathname;
+        }
+      } catch (e) {}
+      return "https://jwlass.github.io/gggelt2026/";
+    }
+
+    function buildShortlistRestoreUrl() {
+      const base = getCatalogBaseUrl();
+      const items = getOrderedShortlist();
+      if (!items.length) return base;
+      const tokens = items.map((it) => {
+        const cleanNum = String(it.num || "").replace(/^#/, "").trim();
+        const rawMax = String(it.maxBid || "").trim().replace(/^\$/, "").trim();
+        if (!rawMax) return cleanNum;
+        const safeMax = encodeURIComponent(rawMax.replace(/[,&=?#]/g, ""));
+        return safeMax ? `${cleanNum}:${safeMax}` : cleanNum;
+      }).filter(Boolean);
+      return tokens.length ? `${base}?shortlist=${tokens.join(",")}` : base;
+    }
+
+    function restoreShortlistFromParam(rawParam) {
+      let val = String(rawParam || "").trim();
+      if (!val) return 0;
+
+      const paramMatch = val.match(/[?&#]shortlist=([^&#\s]+)/i) || val.match(/^shortlist=([^&#\s]+)/i);
+      if (paramMatch) {
+        try { val = decodeURIComponent(paramMatch[1]); } catch (e) { val = paramMatch[1]; }
+      }
+
+      const byNum = {};
+      catalogItems.forEach((it) => { byNum[it.num] = it; });
+
+      let restoredCount = 0;
+      val.split(/[\s,;]+/).forEach((tok) => {
+        const cleanTok = tok.trim();
+        if (!cleanTok) return;
+        const m = cleanTok.match(/^#?(\d+)(?::(.*))?$/);
+        if (!m) return;
+        const lotKey = "#" + m[1];
+        const cardItem = byNum[lotKey];
+        if (!cardItem) return;
+        let maxBid = "";
+        if (m[2] !== undefined && m[2] !== "") {
+          try { maxBid = decodeURIComponent(m[2]).trim(); } catch (e) { maxBid = String(m[2]).trim(); }
+        }
+        const existing = shortlistState[lotKey];
+        shortlistState[lotKey] = {
+          num: cardItem.num,
+          title: cardItem.title,
+          bid: cardItem.bid,
+          donor: cardItem.donor,
+          maxBid: maxBid || (existing ? existing.maxBid || "" : ""),
+        };
+        restoredCount += 1;
+      });
+
+      if (restoredCount > 0) {
+        saveShortlist();
+        syncShortlistUI();
+      }
+      return restoredCount;
+    }
+
+    function checkUrlShortlistRestore() {
+      try {
+        if (typeof window === "undefined" || !window.location) return;
+        let rawVal = "";
+        const search = window.location.search || "";
+        if (search && typeof URLSearchParams !== "undefined") {
+          rawVal = new URLSearchParams(search).get("shortlist") || "";
+        }
+        if (!rawVal && window.location.hash) {
+          const hm = window.location.hash.match(/shortlist=([^&]+)/i);
+          if (hm) rawVal = hm[1];
+        }
+        if (!rawVal) return;
+
+        const restored = restoreShortlistFromParam(rawVal);
+        if (restored > 0) {
+          try {
+            if (window.history && typeof window.history.replaceState === "function") {
+              let cleanUrl = window.location.pathname || "/";
+              if (typeof URLSearchParams !== "undefined" && search) {
+                const sp = new URLSearchParams(search);
+                sp.delete("shortlist");
+                const qs = sp.toString();
+                if (qs) cleanUrl += "?" + qs;
+              }
+              window.history.replaceState(null, "", cleanUrl);
+            }
+          } catch (e) {}
+          shortlistRestoredNotice = true;
+          openShortlistModal();
+        }
+      } catch (e) {}
+    }
+
+    function restoreFromPasteInput() {
+      const inp = document.getElementById("restoreLinkPasteInput");
+      const errEl = document.getElementById("restorePasteError");
+      if (!inp) return;
+      const count = restoreShortlistFromParam(inp.value);
+      if (count > 0) {
+        shortlistRestoredNotice = true;
+        renderShortlistModal();
+      } else if (errEl) {
+        errEl.textContent = "Could not find any matching lot numbers in that link. Try pasting a Magic Restore Link or numbers like 1,6,35.";
+        errEl.style.display = "block";
+      }
+    }
+
+    function copyShortlistRestoreLink() {
+      const url = buildShortlistRestoreUrl();
+      const btn = document.getElementById("copyRestoreLinkBtn");
+      const done = () => { if (btn) { btn.textContent = "✓ Magic Link Copied!"; setTimeout(() => { btn.textContent = "🔗 Copy Magic Restore Link"; }, 2200); } };
+      try {
+        if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(url).then(done).catch(() => {});
+        } else if (typeof document !== "undefined" && document.body) {
+          const ta = document.createElement("textarea"); ta.value = url; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); document.body.removeChild(ta); done();
+        }
+      } catch (e) {}
+      return url;
+    }
+
     function renderShortlistModal() {
       const items = getOrderedShortlist();
       const body = document.getElementById("shortlistModalBody");
       if (items.length === 0) {
-        body.innerHTML = `<p style="text-align:center; padding: 24px 10px; color: #a8a29e;">You haven&rsquo;t marked any items yet!<br />Tap <strong>&ldquo;☆ Save to My List&rdquo;</strong> on any auction lot to build your personal game plan.</p>`;
+        body.innerHTML = `
+          <p style="text-align:center; padding: 18px 10px; color: #a8a29e;">You haven&rsquo;t marked any items yet!<br />Tap <strong>&ldquo;☆ Save to My List&rdquo;</strong> on any auction lot to build your personal game plan.</p>
+          <div class="shortlist-restore-box">
+            <div class="shortlist-restore-box-title">🔗 Have a Magic Restore Link from another phone or browser?</div>
+            <div class="restore-paste-row">
+              <input type="text" id="restoreLinkPasteInput" class="restore-paste-input" placeholder="Paste link or lot #s (e.g. 1,6,35)" aria-label="Paste Magic Restore Link or lot numbers" />
+              <button type="button" class="action-btn-secondary" onclick="restoreFromPasteInput()">Restore List</button>
+            </div>
+            <div id="restorePasteError" class="restore-paste-error" style="display:none;"></div>
+          </div>
+        `;
         return;
       }
       const rowsHtml = items.map((it) => `
@@ -3548,14 +3818,23 @@
         </div>
       `).join("");
 
+      const noticeHtml = shortlistRestoredNotice
+        ? `<div class="shortlist-restore-banner" role="status">&#10003; Shortlist restored from your Magic Restore Link!</div>`
+        : "";
+
       body.innerHTML = `
-        <p style="margin-bottom: 12px;">Here are your <strong>${items.length}</strong> marked lot${items.length === 1 ? "" : "s"}. Add optional max bids below, then print a clean white 1-page cheat sheet or copy/send it to your phone!</p>
+        ${noticeHtml}
+        <p style="margin-bottom: 12px;">Here are your <strong>${items.length}</strong> marked lot${items.length === 1 ? "" : "s"}. Add optional max bids below, then print a clean white 1-page cheat sheet or save/send your shortlist!</p>
         <div>${rowsHtml}</div>
         <div class="shortlist-actions">
           <button type="button" class="action-btn-primary" onclick="printShortlistOnly()">🖨️ Print / Save Shortlist PDF</button>
+          <button type="button" id="copyRestoreLinkBtn" class="action-btn-secondary" onclick="copyShortlistRestoreLink()">🔗 Copy Magic Restore Link</button>
           <button type="button" id="copyShortlistBtn" class="action-btn-secondary" onclick="copyShortlistText()">📋 Copy Text</button>
           <button type="button" class="action-btn-secondary" onclick="shareShortlist()">📤 Share / Send to Phone</button>
           <button type="button" class="action-btn-danger" onclick="clearShortlist()">Clear All</button>
+        </div>
+        <div class="shortlist-restore-tip">
+          <strong>Save across devices:</strong> Tap <strong>🔗 Copy Magic Restore Link</strong> (or <strong>📤 Share / Send to Phone</strong>) to keep a personal link that reloads your exact shortlist &amp; max bids in another browser, on another phone, or after future catalog updates.
         </div>
       `;
     }
@@ -3573,6 +3852,9 @@
         if (it.maxBid && it.maxBid.trim()) line += ` — My Max Bid: $${it.maxBid.trim().replace(/^\$/, "")}`;
         lines.push(line);
       });
+      lines.push("----------------------------------------");
+      lines.push("Magic Restore Link (reloads your picks on any phone or updated catalog):");
+      lines.push(buildShortlistRestoreUrl());
       return lines.join("\n");
     }
 
@@ -3588,7 +3870,8 @@
 
     function shareShortlist() {
       const text = buildShortlistPlainText();
-      if (navigator.share) navigator.share({ title: "My Going, Going, Gelt Night Shortlist", text }).catch(() => {});
+      const restoreUrl = buildShortlistRestoreUrl();
+      if (navigator.share) navigator.share({ title: "My Going, Going, Gelt Night Shortlist", text, url: restoreUrl }).catch(() => {});
       else window.location.href = `mailto:?subject=${encodeURIComponent("My Going, Going, Gelt Night Auction Shortlist")}&body=${encodeURIComponent(text)}`;
     }
 
@@ -3864,7 +4147,7 @@
               <div style="font-size:7.3pt;font-weight:700;color:#57534e;margin-top:4px;">Starting Bid: TBD</div>
             </div>
             <div class="tf-cat-hdr" style="margin-top:10px;">How Auction Night Works</div>
-            <p style="font-size:7.7pt;line-height:1.35;color:#44403c;margin-bottom:4px;"><strong>1. Pick Your Favorites:</strong> Browse all 39 lots inside &amp; note top picks.</p>
+            <p style="font-size:7.7pt;line-height:1.35;color:#44403c;margin-bottom:4px;"><strong>1. Pick Your Favorites:</strong> Browse all 42 lots inside &amp; note top picks.</p>
             <p style="font-size:7.7pt;line-height:1.35;color:#44403c;margin-bottom:4px;"><strong>2. Bid Boldly:</strong> Raise your paddle or sign the auction table bid sheets.</p>
             <p style="font-size:7.7pt;line-height:1.35;color:#44403c;"><strong>3. Claim Glory:</strong> Winners announced at close of evening!</p>
           </div>
@@ -3895,7 +4178,7 @@
           </div>
           <p style="font-size:8.2pt;font-weight:700;color:#44403c;line-height:1.35;">One-of-a-kind experiences, luxury items &amp; exclusive shul packages!</p>
           <div class="tf-event-box">28 NOV &bull; 8&ndash;11 PM<br/>Dairy Dinner, Desserts &amp; Drinks</div>
-          <div style="font-size:7.5pt;color:#57534e;">39 Confirmed Golden Lots Inside<br/>https://www.shomayim.org/event/gggelt</div>
+          <div style="font-size:7.5pt;color:#57534e;">42 Confirmed Golden Lots Inside<br/>https://www.shomayim.org/event/gggelt</div>
         </div>`;
 
       const p4 = `
@@ -3912,17 +4195,17 @@
             ${renderTrifoldCompactGroup("sec-shul-vip")}
             ${renderTrifoldCompactGroup("sec-kids-wellness")}
           </div>
-          <div style="border:1px solid #d4af37;background:#fffdf6;border-radius:6px;padding:7px 9px;font-size:7.6pt;color:#44403c;">
-            <strong style="color:#8c6209;">My Auction Notes / Paddle #:</strong> ___________________<br/>
-            <div style="border-bottom:1px solid #cbd5e1;height:14px;"></div>
-            <div style="border-bottom:1px solid #cbd5e1;height:14px;"></div>
-          </div>
         </div>`;
 
       const p6 = `
         <div class="trifold-panel">
           <div>
             ${renderTrifoldCompactGroup("sec-jewelry-art")}
+          </div>
+          <div style="border:1px solid #d4af37;background:#fffdf6;border-radius:6px;padding:7px 9px;font-size:7.6pt;color:#44403c;">
+            <strong style="color:#8c6209;">My Auction Notes / Paddle #:</strong> ___________________<br/>
+            <div style="border-bottom:1px solid #cbd5e1;height:14px;"></div>
+            <div style="border-bottom:1px solid #cbd5e1;height:14px;"></div>
           </div>
         </div>`;
 
