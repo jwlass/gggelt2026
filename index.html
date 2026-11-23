@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Going, Going, Gelt Night — 2026 Chanukah Auction Catalog (v10)</title>
+  <title>Going, Going, Gelt Night — 2026 Chanukah Auction Catalog (v12)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Great+Vibes&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     /* ==========================================================================
-       Going, Going, Gelt Night — v10
+       Going, Going, Gelt Night — v12
        Digital View: Flyer-Matched Black & Gold Theme + Featured VIP Spotlight
        Print View (@media print): Clean Ink-Friendly White Theme (US Letter)
        ========================================================================== */
@@ -64,24 +64,19 @@
       padding: 10px 20px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
       gap: 14px;
       border-bottom: 2px solid var(--gold-bright);
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
       font-size: 13px;
     }
 
-    .print-toolbar-info {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #fef3c7;
-      flex-wrap: wrap;
-    }
-
     .toolbar-actions {
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 8.5in;
       gap: 8px;
       flex-wrap: wrap;
     }
@@ -1243,7 +1238,7 @@
 
     @media screen and (max-width: 720px) {
       .print-toolbar { padding: 8px 12px; gap: 8px; }
-      .toolbar-actions { width: 100%; justify-content: space-between; }
+      .toolbar-actions { width: 100%; justify-content: center; gap: 6px 8px; }
       .text-size-control { flex: 1 1 100%; justify-content: space-between; }
       .text-size-slider { flex: 1; min-width: 70px; }
       .catalog-page { margin: 0; padding: 16px; border-radius: 0; }
@@ -1258,10 +1253,6 @@
 
   <!-- Screen-Only Toolbar -->
   <div class="print-toolbar">
-    <div class="print-toolbar-info">
-      <strong>Going, Going, Gelt Night &bull; v10</strong>
-      <span>• Dark &amp; Gold Web View (Prints in Ink-Friendly White!)</span>
-    </div>
     <div class="toolbar-actions">
       <div class="text-size-control" role="group" aria-label="Text size accessibility control">
         <label for="textSizeSlider" class="text-size-label">Text Size</label>
@@ -2467,7 +2458,7 @@
       }
     });
 
-    const STORAGE_KEY = "gggelt_2026_shortlist_v10";
+    const STORAGE_KEY = "gggelt_2026_shortlist_v12";
     let shortlistState = {};
     let catalogItems = [];
 
@@ -2497,7 +2488,12 @@
         if (!actions) {
           actions = document.createElement("div");
           actions.className = "card-actions no-print";
-          card.insertBefore(actions, card.querySelector(".item-footer"));
+          const footer = card.querySelector(".item-footer");
+          if (footer && footer.parentNode) {
+            footer.parentNode.insertBefore(actions, footer);
+          } else {
+            card.appendChild(actions);
+          }
         }
 
         const btn = document.createElement("button");
